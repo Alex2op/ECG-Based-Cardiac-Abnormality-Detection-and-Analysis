@@ -85,7 +85,7 @@ model = RandomForestClassifier(
 
 model.fit(X_train, y_train)
 
-print("Training Accuracy:", model.score(X_test, y_test))
+print("Test Accuracy:", model.score(X_test, y_test))
 
 # -------------------------------
 # STEP 3: DYNAMIC PATIENT INPUT
