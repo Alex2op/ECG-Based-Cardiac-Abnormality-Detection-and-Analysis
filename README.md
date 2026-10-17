@@ -27,11 +27,35 @@ This project uses Python, signal processing, and machine learning to analyze ele
 
 ## Dataset
 
-The project uses the MIT-BIH Arrhythmia Database available through PhysioNet.
+This project uses the MIT-BIH Arrhythmia Database provided by PhysioNet.
 
-Dataset link: https://physionet.org/content/mitdb/1.0.0/
+**Dataset link:** https://physionet.org/content/mitdb/1.0.0/
 
-The ECG records must be available using the data-loading method implemented in the source code.
+### Dataset Setup
+
+1. Download the required ECG records from PhysioNet.
+2. Create a folder named `data` in the project root directory.
+3. Place the required record files inside the `data` folder.
+4. Ensure each record has its corresponding files, including `.dat`, `.hea`, and `.atr` where required by the code.
+
+The project directory should look like this:
+
+```text
+ECG-Based-Cardiac-Abnormality-Detection-and-Analysis/
+├── main.py
+├── requirements.txt
+├── README.md
+├── .gitignore
+└── data/
+    ├── 100.dat
+    ├── 100.hea
+    ├── 100.atr
+    └── ...
+```
+
+The filenames shown above are examples. Download the records required by the program and preserve their original filenames.
+
+**Note:** The ECG dataset files are not included in this repository. Users must obtain the records separately from PhysioNet.
 
 ## Installation
 
